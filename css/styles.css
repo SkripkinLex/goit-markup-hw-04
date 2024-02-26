@@ -82,13 +82,14 @@ a {
 }
 
 .nav_list_li_1 {
-    position: relative;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
 }
 
 .nav_list_1 {
     display: block;
+    position: relative;
     font-weight: 500;
     line-height: 1.5;
     font-size: 16px;
@@ -135,6 +136,7 @@ a {
 
 .addres_li {
     padding: 24px 0;
+    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .addres {
@@ -165,6 +167,7 @@ a {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url('/images/people-office-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #F4F4FD;
     padding: 188px 0;
 }
@@ -329,17 +332,28 @@ a {
 }
 
 .social_icone_team {
+    width: 40px;
+    height: 40px;
+}
+
+.link_icone {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4d5ae5;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icone_param_team {
     fill: #f4f4fd;
+}
+
+.link_icone:hover, 
+.link_icone:focus {
+    background-color: #404bbf; 
 }
 
 .portfolio_section {
@@ -370,7 +384,7 @@ a {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio_li:hover .portfolio_overlau {
+.portfolio_li:hover .portfolio_overlau_text {
     transform: translateY(0%);
 }
 
@@ -388,25 +402,21 @@ a {
     overflow: hidden;
 }
 
-.portfolio_overlau {
+.portfolio_overlau_text {
     position: absolute;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color:#4d5ae5;
-    overflow: auto;
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio_overlau_text {
-    margin: 40px 32px 0 32px;
+    padding: 40px 32px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    background-color:#4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: auto;
 }
 
 .portfolio_content {
@@ -429,6 +439,7 @@ a {
     line-height: 1.5;
     font-size: 16px;
     letter-spacing: 0.02em;
+    transform: translateY(0%);
 }
 
 .footer {
@@ -467,7 +478,6 @@ a {
 }
 
 .footer_text {
-    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -483,6 +493,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .list_icone {
